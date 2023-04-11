@@ -1,7 +1,6 @@
 
 form.addEventListener('submit', (e) => {
   let value = choice.value - 1;
-  console.log("🚀 ~ file: index.js:4 ~ form.addEventListener ~ value:", value)
   e.preventDefault();
   let seconds = 59;
   countdownDisplay.innerHTML += `<li id="countdown-${value}">${value} : ${seconds}</li>`;
